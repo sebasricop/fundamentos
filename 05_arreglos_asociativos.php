@@ -12,7 +12,14 @@ $course = [
         "CSS"
     ],
     'author' => "Sebastian",
-    'email' => "sebastian@ejemplo.com"
+    'email' => "sebastian@ejemplo.com",
+    'Lessons' => [
+        "Introducción",
+        "Variables",
+        "Arreglos",
+        "Funciones",
+        "POO"
+    ]
 ];
 
 ?>
@@ -40,6 +47,17 @@ $course = [
         //Recorrer el arreglo de etiquetas
         foreach ($course['tags'] as $tag): ?>
             <li><?= $tag ?></li>
+        <?php endforeach; ?>
+    </ul>
+    </p>
+
+     <p>
+        <strong>Lecciones</strong></strong>
+    <ul>
+        <?php
+        //Recorrer el arreglo de etiquetas
+        foreach ($course['Lessons'] as $lessons): ?>
+            <li><?= $lessons ?></li>
         <?php endforeach; ?>
     </ul>
     </p>
